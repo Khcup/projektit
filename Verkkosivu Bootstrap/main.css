@@ -29,6 +29,6 @@ li  a:hover {
     font-size-adjust: 2;
     border-radius:10px;
 }
-table {
-    border: 2px solid black;
- }
+table, th, td {
+    border: 1px solid;
+  }

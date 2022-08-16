@@ -26,7 +26,7 @@ li  a:hover {
     transition: all 500ms;
     font-size:20px;
     font-size-adjust: 2;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 html{
@@ -34,3 +34,7 @@ html{
     border-image: linear-gradient(90deg,#F9F295, #E0AA3E, #FAF398, #B88A44);
     border-image-slice: 1;
 }
+
+table, th, td {
+    border: 1px solid;
+  }
