@@ -1,0 +1,34 @@
+body {
+    padding: 10;
+    margin: 0;
+    background: #f2f6e9;
+}
+.navbar {
+    background:#6ab446;
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+li  a:hover {
+    background-color: #ffd100;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 500ms;
+    font-size:18px;
+    font-size-adjust: 2;
+    border-radius:10px;
+}
+table {
+    border: 2px solid black;
+ }
