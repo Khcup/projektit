@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaverilista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="paaotsikko">Kaverilista</h1>
+
+        <form name="kaverilistainput" id="lisaanimi">
+            <h4>Lisää kaveri</h4>
+            <input type="text" name="nimi" id="textinput" placeholder="Syötä nimi...">
+            <input id="lisaa" type="submit" value="Lisää">
+            <input id="poista" type="button" value="Poista">
+            <input id="jarjesta" type="button" value="Järjestä">
+        </form>
+        <ul id="kaverilista" class="item-list">
+            
+        </ul>
+    </div>
+    <script src="kaverilista.js"></script>
+</body>
+
+</html>

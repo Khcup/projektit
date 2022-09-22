@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lomakkeen validointi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <script src="script.js"></script>
+    <form name="formi">
+        <label for="kayttajaID">Käyttäjä ID:</label>
+        <input class="tekstikentta" type="text" id="kayttajaID"><br>
+
+        <label for="salasana">Salasana:</label>
+        <input class="tekstikentta" type="text" id="salasana"><br>
+
+        <label for="nimi">Nimi:</label>
+        <input class="tekstikentta" type="text" id="nimi"><br>
+
+        <label for="osoite">Osoite:</label>
+        <input class="tekstikentta" type="text" id="osoite"><br>
+
+        
+        <label for="maa">Maa:</label>
+        <select class="tekstikentta" id="maa">
+            <option value="valitse-maa">Valitse maa</option>
+            <option value="suomi">Suomi</option>
+            <option value="ruotsi">Ruotsi</option>
+            <option value="muu">Muu</option>
+        </select><br>
+
+        <label for="postinumero">Postinumero:</label>
+        <input class="tekstikentta" type="text" id="postinumero"><br>
+    
+        <label for="sahkoposti">Sähköposti:</label>
+        <input class="tekstikentta" type="text" id="sahkoposti"><br>
+
+      
+        <form class="sukupuoliFormi">
+            <label>Sukupuoli:</label>
+            <input  type="radio" id="mies" name="sukupuoli" value="mies">
+            <label for="html">Mies</label>
+    
+            <input type="radio" id="nainen" name="sukupuoli" value="nainen">
+            <label for="html">Nainen</label><br>
+        </form>
+
+        <form class="kieliFormi" id="kieliform"></form>
+        <label>Kieli:</label>
+           <input type="checkbox" id ="suomi" name="kieli" value="suomi">
+           <label for="html">Suomi</label>
+
+           <input type="checkbox" id ="muu" name="kieli" value="muu">
+           <label for="html">Muu kuin suomi</label>
+        </form><br>
+
+
+        
+        <form>
+            <label for="lisatietoja">Lisätietoja:</label>
+            <textarea></textarea>
+        </form>
+
+        <input class="nappula" id="laheta" onclick="validate()" type ="button" value="Lähetä">
+
+    </form>
+</body>
+</html>
