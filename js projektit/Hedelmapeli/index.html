@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Hedelmäpeli</title>
+    </head>
+    <body>
+    
+        <div class="container">
+
+            <canvas id="header" width="900" height="120" style="align-content: center;"></canvas>
+            <div class="content">
+                <div class="otsikot">
+                    <h3>Rahaa: <span id="rahaa">50</span> €</h3>
+                    <h3>Valitse panos: </h3>
+                    <button id="yksi" onclick="asetaPanos(1)">1€ </button> 
+                    <button id="kaksi" onclick="asetaPanos(2)"> 2€ </button> 
+                    <button id="kolme" onclick="asetaPanos(3)"> 3€ </button> 
+                    <button id="nelja" onclick="asetaPanos(4)"> 4€</button>
+                    <h3 style="padding: 30px 30px">Panos: <span id="panos"></span> €</h3>
+                </div>
+                
+                <table>
+                    <tr>
+                        <td><img src="images/number.jpg" alt="Number seven" style="height: 40px"><img src="images/number.jpg" alt="Number seven" style="height: 40px"><img src="images/number.jpg" alt="Number seven" style="height: 40px"><img src="images/number.jpg" alt="Number seven" style="height: 40px"> = 10 x panos</td>
+                     </tr>
+                    <tr>
+                        <td><img src="images/apple.png" alt="Apple" style="width: 40px"><img src="images/apple.png" alt="Apple" style="width: 40px"><img src="images/apple.png" alt="Apple" style="width: 40px"><img src="images/apple.png" alt="Apple" style="width: 40px"> = 6 x panos</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/watermelon.png" alt="Watermelon" style="width: 40px"><img src="images/watermelon.png" alt="Watermelon" style="width: 40px"><img src="images/watermelon.png" alt="Watermelon" style="width: 40px"><img src="images/watermelon.png" alt="Watermelon" style="width: 40px"> = 5 x panos</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/pear.png" alt="Pear" style="height: 50px"><img src="images/pear.png" alt="Pear" style="height: 50px"><img src="images/pear.png" alt="Pear" style="height: 50px"><img src="images/pear.png" alt="Pear" style="height: 50px"> = 4 x panos</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/cherry.png" alt="Cherry" style="width: 40px"><img src="images/cherry.png" alt="Cherry" style="width: 40px"><img src="images/cherry.png" alt="Cherry" style="width: 40px"><img src="images/cherry.png" alt="Cherry" style="width: 40px"> = 3 x panos</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/number.jpg" alt="Number seven" style="height: 40px"><img src="images/number.jpg" alt="Number seven" style="height: 40px"><img src="images/number.jpg" alt="Number seven" style="height: 40px"> = 5 x panos</td>
+                    </tr>
+                </table>
+                
+            </div>    
+        
+            <div class="game">
+                <div class="kuvat">
+                    <img id="kuva1" class="kehys" src="images/apple.png">
+                    <img id="kuva2" class="kehys" src="images/cherry.png">
+                    <img id="kuva3" class="kehys" src="images/pear.png">
+                    <img id="kuva4" class="kehys" src="images/watermelon.png">
+                </div>
+                <div class="buttons">
+                    <button id="nappi1" onclick="lukitse(0)">Lukitse</button>
+                    <button id="nappi2" onclick="lukitse(1)">Lukitse</button>
+                    <button id="nappi3" onclick="lukitse(2)">Lukitse</button>
+                    <button id="nappi4" onclick="lukitse(3)">Lukitse</button>
+                </div>
+                <div class="peluuNappi">
+                    <button id="pelaa" onclick="pelaa(1)">Pelaa</button></br>
+                </div>
+                <div class="tulos">
+                    <h4 id="voitto"></h4>
+                </div> 
+            </div>
+            
+        </div>
+      <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    --locked-color: #5fadbf;
+    --unlocked-color: #ff5153;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    margin:auto;
+    width: 900px;
+    height:fit-content;
+    background-color: rgb(25, 117, 30);
+    border:2px solid black;
+    box-shadow: 5px 10px #888888;
+    border-radius: 15px;
+}
+
+.content {
+    margin: auto;
+    width: 865px;
+    height:fit-content;
+    background-color: antiquewhite;
+    border: 2px solid #f9F295;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color:rgb(29, 86, 15);
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+.otsikot {
+    float:left;
+}
+
+h3 {
+    padding-left: 20px;
+}
+
+button#yksi, button#kaksi, button#kolme, button#nelja {
+    background-image: linear-gradient(#f9F295, #B88A44);
+    font-size: 24px;
+    color: black;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: center;
+}
+
+button#yksi:hover, button#kaksi:hover, button#kolme:hover, button#nelja:hover{
+    font-size:40px;
+    transition: all 500ms;
+    font-size-adjust: 24px;
+}
+
+button {
+    background-color: green;
+    font-size: 24px;
+    color: white;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(29, 86, 15);
+}
+
+table {
+    float:right;
+    margin: 15px
+}
+
+table, td {
+    border: 2px solid rgb(29, 86, 15);
+    border-radius: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.game {
+    margin:auto;
+    width: 865px;
+    height: fit-content;
+    margin-bottom: 15px;
+    background-color: antiquewhite;
+    border: 2px solid #f9F295;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color:rgb(29, 86, 15); 
+    overflow: auto;
+}
+
+.kuvat {
+    margin:auto;
+    width:fit-content;
+}
+
+.kehys  {
+    border: 1px solid rgb(29, 86, 15);
+    width: 120px;
+    height: 120px;
+    background-color: antiquewhite;
+    padding:8px;
+    margin:15px;
+    border-radius: 10px
+}
+
+.buttons {
+    margin:auto;
+    width:fit-content;
+}
+
+#nappi1, #nappi2, #nappi3, #nappi4 {
+    width:120px;
+    margin:15px;
+    margin-top: 0;
+}
+#nappi1:hover, #nappi2:hover, #nappi3:hover, #nappi4:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.peluuNappi {
+    margin: auto;
+    width:fit-content;
+}
+
+#pelaa {
+    background-color: #3e8e41;
+    margin: auto;
+    width: 120px;
+    padding: 18px;
+    font-size: 28px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 9px #999;
+}
+
+#pelaa:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#pelaa:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.tulos {
+    margin:auto;
+    width:650px;
+    align-items: center;
+}
+
+#voitto {
+    text-align: center;
+}
+
+.locked {
+    box-shadow: 0 0 0 5px #ff0000;
+}
