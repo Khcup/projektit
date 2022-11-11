@@ -1,0 +1,127 @@
+
+
+:root{
+    --otsikko-vari: #000000; 
+}
+
+.nappula{
+    margin-top: 25px;
+}
+
+.montako-pelaajaa{
+    margin-top: 25px;
+}
+
+.yksi-vai-kaksi{
+    margin-top: 25px;
+}
+
+
+
+body{
+    text-align: center;
+}
+
+.pistenakyma{
+    text-align: center;
+}
+
+.noppa{
+    border-width: 1px;
+    width: 17%;
+    transform: translateX(-50%);
+    margin-left:50%;
+    border-radius: 10px;
+}
+
+.noppa-kuva{
+    height: 75px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.nopat{
+    margin-top: 20%;
+    transform: translateX(-50%);
+    margin-left:50%;
+}
+
+.otsikko{
+    font-size: 5em;
+    color: var(--otsikko-vari);
+}
+
+.heita{
+    user-select: none;
+    transform: translateX(-0.1%);
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: absolute;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-top: 5%;
+    float: center;
+}
+
+.lopetaHeittaminen{
+    user-select: none;
+    transform: translateX(-0.1%);
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-top: 5%;
+    float:center;
+    cursor: pointer;
+}
+
+
+.Pelaaja-nakyma{
+    transform: translateX(-99%);
+    margin-left: 15%;
+    position: absolute;
+    top: 7%;
+    width: 10%;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+
+.pelaaja{
+    text-align: left;
+    padding: 3%;
+    border: 1px black solid;
+}
+
+.vuoro{
+    background-color: lawngreen;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.lopetaHeittaminen:hover, .heita:hover  {background-color: #3e8e41}
+
+.lopetaHeittaminen:active, .heita:active{
+  background-color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.pelaaja-laatikko{
+    margin-top: 4px;
+}
